@@ -61,15 +61,15 @@ for name, model in models:
 	results.append(cv_results)
 	names.append(name)
 	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
-Compare Algorithms
+#Compare Algorithms
 pyplot.boxplot(results, labels=names)
 pyplot.title('Algorithm Comparison')
 pyplot.show()
-#KNN accuracy 0.82
-#LR accuracy 0.80
-#SVM accuracy 0.82
+#KNN gave an accuracy of 0.82 out of 1
+#LR accuracy =0.80
+#SVM accuracy =0.82
 #LDA:nan
 #SVM:nan
-#CART accuracy 0.78
+#CART accuracy =0.78
 # graph uploaded as Algorthim comparsion
 #LR, KNN, SVM have the highst accuracy so far. will choose one of them to train the algorthim
