@@ -61,6 +61,7 @@ ML0=pd.DataFrame()
 ML0['studies']=X_test
 ML0=ML0.assign(human_deci=Y_test)
 ML0=ML0.assign(prediction =n)
+ML0.to_csv(r'/Users/hawraal-ghafli/Desktop/sys.review/working codes/ML_predicted_screening.csv', index = False)
 
 
 
